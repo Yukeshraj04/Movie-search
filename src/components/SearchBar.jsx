@@ -13,6 +13,7 @@ export const SearchBar = ({ onSearch, query, setQuery }) => {
         placeholder="Search for movies..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        aria-label="Search movies"
       />
       <button type="submit" aria-label="Search">
         <FaSearch />
